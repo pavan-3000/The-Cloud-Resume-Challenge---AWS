@@ -174,3 +174,6 @@ override.tf.json    # Override JSON config
 *.auto.tfvars       # Automatically loaded variable definitions
 *.auto.tfvars.json  # JSON format automatically loaded variables
 .plan               # Terraform plan files
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup

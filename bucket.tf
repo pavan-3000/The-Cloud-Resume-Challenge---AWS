@@ -1,13 +1,13 @@
-resource "aws_s3" "bucket" {
+resource "aws_s3_bucket" "bucket" {
   bucket = "pavan-resume-challange-pavansingh3000"
-
+  region = "ap-south-1"
   tags  = {
     Name = "resume"
   }
 }
 
 resource "aws_s3_bucket_website_configuration" "website" {
-  bucket = aws_s3.bucket.id
+  bucket = aws_s3_bucket.bucket.id
 
   index_document {
     suffix = "index.html"

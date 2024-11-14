@@ -37,6 +37,14 @@ resource "aws_s3_object" "error_html" {
   content_type = "text/css"
 
 }
+resource "aws_s3_object" "visitorCounter" {
+  bucket = aws_s3_bucket.bucket.bucket
+  key    = "visitorCounter.js"
+  source = "visitorCounter.js"
+  acl    = "private"
+  content_type = "application/javascript"
+
+}
 
 resource "aws_s3_bucket_policy" "bucket_policy" {
   bucket = aws_s3_bucket.bucket.id

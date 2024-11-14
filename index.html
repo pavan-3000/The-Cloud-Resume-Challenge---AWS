@@ -7,57 +7,151 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Visitor Count Section (Fixed at Top) -->
+    <section id="visitor-count-section">
+        <p>This page has been visited <span id="visitor-count">loading...</span> times.</p>
+    </section>
+    <script src="visitorCounter.js"></script>
+
     <header>
-        <h1>Pavan S</h1>
-        <p>Phone: +91-9538193342 | <a href="https://linkedin.com/">LinkedIn</a> | <a href="mailto:pavansingh3000@gmail.com">Gmail</a> | <a href="https://github.com/">GitHub</a></p>
+        <div class="container">
+            <div class="header-content">
+                <h1>Pavan S</h1>
+                <p class="contact">
+                    <a href="tel:+919538193342">+91-9538193342</a> | 
+                    <a href="https://www.linkedin.com/">LinkedIn</a> | 
+                    <a href="mailto:pavansingh3000@gmail.com">Gmail</a> | 
+                    <a href="https://github.com/">GitHub</a>
+                </p>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Objective</h2>
-        <p>Dynamic and motivated Computer Applications graduate with a strong foundation in cloud engineering and DevOps practices. Proficient in AWS technologies, containerization, and CI/CD processes, seeking to leverage technical expertise and problem-solving skills in a Cloud Engineer or DevOps role.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Objective</h2>
+            <p>Dynamic and motivated Computer Applications graduate with a strong foundation in cloud engineering and DevOps practices. Proficient in AWS technologies, containerization, and CI/CD processes, seeking to leverage technical expertise and problem-solving skills in a Cloud Engineer or DevOps role.</p>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> SQL, Python</li>
-            <li><strong>Cloud Computing:</strong> AWS (EC2, S3, Lambda, CloudFront, RDS, DynamoDB)</li>
-            <li><strong>DevOps Tools:</strong> Docker, Kubernetes, AWS Code Pipeline, CloudFormation, Terraform</li>
-            <li><strong>Networking:</strong> Basic knowledge of TCP/IP, DNS, VPC, Route 53</li>
-            <li><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS)</li>
-            <li><strong>Monitoring & Security:</strong> CloudWatch, IAM, KMS</li>
-            <li><strong>Automation & Scripting:</strong> Bash, Python</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Python</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Computing</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">AWS (EC2, S3, Lambda, CloudFront, RDS, DynamoDB)</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">AWS CodePipeline</div>
+                        <div class="skill-item">CloudFormation</div>
+                        <div class="skill-item">Terraform</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">TCP/IP</div>
+                        <div class="skill-item">DNS</div>
+                        <div class="skill-item">VPC</div>
+                        <div class="skill-item">Route 53</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Linux (Ubuntu, CentOS)</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Monitoring & Security</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">CloudWatch</div>
+                        <div class="skill-item">IAM</div>
+                        <div class="skill-item">KMS</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Automation & Scripting</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Bash</div>
+                        <div class="skill-item">Python (boto3)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>AWS Two-Tier Application Deployment using Terraform</h3>
-        <ul>
-            <li>Developed and deployed a two-tier web application on AWS using Terraform with a web and database tier.</li>
-            <li>Configured EC2 instances with AWS Elastic Load Balancer (ELB) and implemented Auto Scaling for scalability.</li>
-            <li>Utilized Amazon RDS for database, ensuring data durability and availability.</li>
-            <li>Tech Stack: AWS EC2, ELB, Auto Scaling, RDS, VPC, Terraform</li>
-        </ul>
+        <section id="projects">
+            <h2>Projects</h2>
+        
+            <div class="project-item">
+                <div class="project-icon">
+                    <i class="fas fa-cloud"></i> <!-- Cloud Icon for AWS related project -->
+                </div>
+                <div class="project-details">
+                    <h3>AWS Two-Tier Application Deployment using Terraform</h3>
+                    <ul>
+                        <li>Developed and deployed a two-tier web application on AWS using Terraform, with a web and database tier.</li>
+                        <li>Configured EC2 instances with AWS Elastic Load Balancer (ELB) and implemented Auto Scaling for scalability.</li>
+                        <li>Utilized Amazon RDS for database, ensuring data durability and availability.</li>
+                    </ul>
+                    <p><strong>Tech Stack:</strong> AWS EC2, ELB, Auto Scaling, RDS, VPC, Terraform</p>
+                </div>
+            </div>
+        
+            <div class="project-item">
+                <div class="project-icon">
+                    <i class="fas fa-cogs"></i> <!-- Gear Icon for CI/CD project -->
+                </div>
+                <div class="project-details">
+                    <h3>Static Website Hosting on AWS with CI/CD</h3>
+                    <ul>
+                        <li>Designed and deployed a static website on AWS using S3 for storage and CloudFront for delivery.</li>
+                        <li>Implemented CI/CD pipeline with AWS CodePipeline and CodeBuild for continuous integration and deployment.</li>
+                    </ul>
+                    <p><strong>Tech Stack:</strong> AWS S3, CloudFront, CodePipeline, CodeBuild</p>
+                </div>
+            </div>
+        
+            <div class="project-item">
+                <div class="project-icon">
+                    <i class="fas fa-rocket"></i> <!-- Rocket Icon for Serverless API project -->
+                </div>
+                <div class="project-details">
+                    <h3>Serverless REST API with AWS Lambda, API Gateway, and DynamoDB</h3>
+                    <ul>
+                        <li>Developed a serverless REST API with CRUD operations using AWS Lambda, API Gateway, and DynamoDB.</li>
+                        <li>Configured API Gateway endpoints to handle GET, POST, PATCH, and DELETE operations.</li>
+                    </ul>
+                    <p><strong>Tech Stack:</strong> AWS Lambda, API Gateway, DynamoDB, IAM, Python (boto3)</p>
+                </div>
+            </div>
+        
+        </section>
+        
+        
 
-        <h3>Static Website Hosting on AWS with CI/CD</h3>
-        <ul>
-            <li>Designed and deployed a static website on AWS using S3 for storage and CloudFront for delivery.</li>
-            <li>Implemented CI/CD pipeline with AWS CodePipeline and CodeBuild for continuous integration and deployment.</li>
-            <li>Tech Stack: AWS S3, CloudFront, CodePipeline, CodeBuild</li>
-        </ul>
+        <section>
+            <h2>Education</h2>
+            <p>Bachelor of Computer Application @ Surana College (Jun 2024) - CGPA: 8.1</p>
+        </section>
+    </div>
 
-        <h3>Serverless REST API with AWS Lambda, API Gateway, and DynamoDB</h3>
-        <ul>
-            <li>Developed a serverless REST API with CRUD operations using AWS Lambda, API Gateway, and DynamoDB.</li>
-            <li>Configured API Gateway endpoints to handle GET, POST, PATCH, and DELETE operations.</li>
-            <li>Tech Stack: AWS Lambda, API Gateway, DynamoDB, IAM, Python (boto3)</li>
-        </ul>
-    </section>
+    <footer>
+        <p>&copy; 2024 Pavan S. All rights reserved.</p>
+    </footer>
 
-    <section>
-        <h2>Education</h2>
-        <p>Bachelor of Computer Application @ Surana College (Jun 2024) - CGPA: 8.1</p>
-    </section>
+    <script src="visitorCounter.js"></script>
 </body>
 </html>
